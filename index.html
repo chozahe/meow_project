@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+<section class="hero is-info is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">Hangman Game</h1>
+      <h2 class="subtitle">Can you guess the word?</h2>
+
+      <button id="startGameButton" class="button is-primary is-large mb-4">Start New Game</button>
+
+      <div id="gameArea" class="is-hidden">
+        <p id="wordDisplay" class="title is-3">_ _ _ _ _</p>
+        <p id="livesDisplay" class="subtitle is-4">Lives: 6</p>
+        <div id="keyboard" class = "box has-background-info-light is-hidden"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+
