@@ -28,8 +28,8 @@ class HangmanGame {
             this.buttonStates = buttonStates || {};
 
             this.createKeyboard();
-            this.updateGameDisplay();
             this.showGameArea();
+            this.updateGameDisplay();
         }
     }
 
@@ -91,7 +91,6 @@ class HangmanGame {
                 button.textContent = letter;
                 button.classList.add('button', 'is-info', 'is-responsive');
 
-                // Применяем состояние кнопки из buttonStates
                 if (this.buttonStates[letter]) {
                     const { disabled, status } = this.buttonStates[letter];
                     button.disabled = disabled;
