@@ -9,7 +9,6 @@ export class HangmanController {
             this.view.createKeyboard(this.model.buttonStates, (letter, button) => this.handleGuess(letter, button));
             this.view.updateDisplay(this.model);
             this.view.showGameArea();
-            return;
         }
 
     }
@@ -24,6 +23,7 @@ export class HangmanController {
             this.view.createKeyboard(this.model.buttonStates, (letter, button) => this.handleGuess(letter, button));
             this.view.updateDisplay(this.model);
             this.view.showGameArea();
+            this.model.saveToLocalStorage();
             console.log("New game started with word:", this.model.wordToGuess);
         } catch (error) {
             console.error('Error:', error);
